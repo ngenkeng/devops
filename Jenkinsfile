@@ -43,7 +43,12 @@ pipeline{
   }
 }*/
 // Jenkinsfile
-String credentialsId = 'AWS_ACCESS_KEY_ID'
+
+pipeline{
+  agent any
+  tools {
+    terraform 'terraform'
+  }
 
 
 try {
