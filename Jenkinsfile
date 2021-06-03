@@ -43,7 +43,7 @@ pipeline{
   }
 }*/
 // Jenkinsfile
-String credentialsId = "AKIAZXQMKJONWOQAUY2Y"
+String credentialsId = "terraform"
 
 try {
   stage('checkout') {
