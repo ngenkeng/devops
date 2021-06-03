@@ -43,8 +43,8 @@ pipeline{
   }
 }*/
 // Jenkinsfile
-withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: env.AWS_CREDENTIAL_ID,
-                        ACCESS_KEY: 'ACCESS_KEY', SECRET_KEY: 'SECRET_KEY']]) { } 
+String credentialsId = 'awsCredentials'
+
 
 try {
   stage('checkout') {
