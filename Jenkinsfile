@@ -49,7 +49,7 @@ pipeline{
   tools {
     terraform 'terraform'
   }*/
-  String credentialsId = 'awsCredentials'
+
 
 
 try {
