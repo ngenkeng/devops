@@ -43,7 +43,8 @@ pipeline{
   }
 }*/
 // Jenkinsfile
-String credentialsId = "terraform"
+withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: env.AWS_CREDENTIAL_ID,
+                        ACCESS_KEY: 'ACCESS_KEY', SECRET_KEY: 'SECRET_KEY']]) { } 
 
 try {
   stage('checkout') {
