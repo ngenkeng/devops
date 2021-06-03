@@ -43,12 +43,13 @@ pipeline{
   }
 }*/
 // Jenkinsfile
-
+/*
 pipeline{
   agent any
   tools {
     terraform 'terraform'
-  }
+  }*/
+  String credentialsId = 'awsCredentials'
 
 
 try {
