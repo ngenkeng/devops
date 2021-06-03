@@ -43,7 +43,7 @@ pipeline{
   }
 }*/
 // Jenkinsfile
-String credentialsId = 'awsCredentials'
+String credentialsId = 'AWS_ACCESS_KEY_ID'
 
 
 try {
