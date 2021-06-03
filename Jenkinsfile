@@ -43,7 +43,7 @@ pipeline{
   }
 }*/
 // Jenkinsfile
-String credentialsId = 'awsCredentials'
+String credentialsId = "env.AWS_CREDENTIAL_ID"
 
 try {
   stage('checkout') {
